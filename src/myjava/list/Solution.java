@@ -8,6 +8,10 @@ import java.util.Collections;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+//https://www.hackerrank.com/challenges/java-list/problem
+//collection add & remove
+//switch case
+//boolean as a status switch in a for loop
 public class Solution
 {
     static ArrayList<Integer> arrayOfIntegers;
