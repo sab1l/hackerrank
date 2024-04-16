@@ -88,20 +88,20 @@ public class Solution
 
     private static void loadInputInto(StringBuilder stringArraysOfD, StringBuilder stringQueries) throws IOException
     {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        buildString(br, stringArraysOfD);
-        buildString(br, stringQueries);
-        br.close();
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        buildStringFrom(bufferedReader, stringArraysOfD);
+        buildStringFrom(bufferedReader, stringQueries);
+        bufferedReader.close();
     }
 
 
-    private static void buildString(BufferedReader br, StringBuilder stringBuilder) throws IOException
+    private static void buildStringFrom(BufferedReader bufferedReader, StringBuilder stringBuilder) throws IOException
     {
-        int n = Integer.parseInt(br.readLine());
+        int n = Integer.parseInt(bufferedReader.readLine());
         int lineCount = 1;
         while (lineCount <= n)
         {
-            stringBuilder.append(br.readLine()).append("\n");
+            stringBuilder.append(bufferedReader.readLine()).append("\n");
             lineCount++;
         }
     }
